@@ -6,6 +6,16 @@ using namespace std;
 
 //segment tree implementation
 
+// imput.txt
+// 4 7
+// 1 0 3
+// 0 1 2
+// 1 0 1
+// 1 0 0
+// 0 0 3
+// 1 0 3
+// 1 3 3
+
 vector<int> segTree;
 vector<int> lazyTree;
 vector<int> arr;
@@ -44,7 +54,7 @@ void createSegmentTree(int low,int high,int pos){
 
 void updateSegmentTree(int ql , int qh, int low, int high, int pos, int delta ){
 
-	cout<<"update "<< ql << qh << low << high << pos <<endl;
+	// cout<<"update "<< ql << qh << low << high << pos <<endl;
 
 	if( low > high ) return; 
 
@@ -53,11 +63,16 @@ void updateSegmentTree(int ql , int qh, int low, int high, int pos, int delta ){
 		
 		// propogation remaining
 
-		segTree.at(pos) += ( high - low + 1) * lazyTree.at(pos);
+		// segTree.at(pos) += ( high - low + 1) * lazyTree.at(pos);
+
+		segTree.at(pos) = ( high - low + 1) - segTree.at(pos);
+
 
 		if( low != high){
 			lazyTree.at(2*pos+1) += lazyTree.at(pos);
 			lazyTree.at(2*pos+2) += lazyTree.at(pos);
+			lazyTree.at(2*pos+1) %= 2;
+			lazyTree.at(2*pos+2) %= 2;
 		}
 
 		lazyTree.at(pos) = 0; 
@@ -69,11 +84,14 @@ void updateSegmentTree(int ql , int qh, int low, int high, int pos, int delta ){
 	//total overlap
 	if( ql<=low && high<=qh ) {
 		
-		segTree.at(pos) += ( high - low + 1) * delta;
+		// segTree.at(pos) += ( high - low + 1) * delta;
+		segTree.at(pos) = ( high - low + 1) - segTree.at(pos);
 
 		if( low != high){
 			lazyTree.at(2*pos+1) += delta;
 			lazyTree.at(2*pos+2) += delta;
+			lazyTree.at(2*pos+1) %= 2;
+			lazyTree.at(2*pos+2) %= 2;
 		}
 
 		return; 
@@ -97,6 +115,26 @@ int findSegTree(int ql , int qh, int low, int high, int pos ){
 
 	//no overlap
 	if(ql>high || qh<low) return 0;
+
+
+	if( lazyTree.at(pos) != 0 ) {
+		
+		// propogation remaining
+
+		// segTree.at(pos) += ( high - low + 1) * lazyTree.at(pos);
+
+		segTree.at(pos) = ( high - low + 1) - segTree.at(pos);
+		
+
+		if( low != high){
+			lazyTree.at(2*pos+1) += lazyTree.at(pos);
+			lazyTree.at(2*pos+2) += lazyTree.at(pos);
+			lazyTree.at(2*pos+1) %= 2;
+			lazyTree.at(2*pos+2) %= 2;
+		}
+
+		lazyTree.at(pos) = 0; 
+	}
 
 	//total overlap
 	if( ql<=low && high<=qh ) return segTree.at(pos);
@@ -125,9 +163,9 @@ int main(int argc, char const *argv[])
 	// int arr[size];
 
 	for(int i=0;i<size;i++){
-		myfile>>x;
-		cout<<x<<" ";
-		arr.push_back(x);
+		// myfile>>x;
+		// cout<<x<<" ";
+		arr.push_back(0);
 	}
 
 	tsize = 1 << (int)(ceil(log2(size))); 
@@ -155,12 +193,12 @@ int main(int argc, char const *argv[])
 			// update
 			updateSegmentTree(ql, qh, 0, size-1, 0, 1);
 
-			cout<<"segTree"<<endl;
+			// cout<<"segTree"<<endl;
 			
-			printTree(segTree);
-			cout<<"\n lazyTree"<<endl;
+			// printTree(segTree);
+			// cout<<"\n lazyTree"<<endl;
 			
-			printTree(lazyTree);
+			// printTree(lazyTree);
 
 		}else{		
 			cout<<findSegTree(ql, qh, 0, size-1, 0)<<endl;
