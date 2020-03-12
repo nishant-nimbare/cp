@@ -191,6 +191,7 @@ int main(int argc, char const *argv[])
 
 		if(com == 0){
 			// update
+			cout<<"updateing  "<<ql<<qh;
 			updateSegmentTree(ql, qh, 0, size-1, 0, 1);
 
 			// cout<<"segTree"<<endl;

@@ -57,15 +57,15 @@ int main(int argc, char const *argv[])
 
 		}
 
-		// cout<<"-----------"<<endl; 
+		cout<<"-----------"<<endl; 
 
-		// for (int i = 0; i < 4; i++){
-		// 	for (int j = 0; j < 4; j++)
-		// 		cout<<table[i][j]<<'\t';
+		for (int i = 0; i < 4; i++){
+			for (int j = 0; j < 4; j++)
+				cout<<table[i][j]<<'\t';
 
-		// 	cout<<endl;	
-		// }
-		// cout<<"-----------"<<endl; 
+			cout<<endl;	
+		}
+		cout<<"-----------"<<endl; 
 
 
 		int profit = 0;
@@ -92,7 +92,7 @@ int main(int argc, char const *argv[])
 
 	}
 
-	cout<<totalProfit;
+	cout<<totalProfit<<endl;
 
 	return 0;
 }

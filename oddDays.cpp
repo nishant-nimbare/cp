@@ -61,60 +61,81 @@ int main(int argc, char const *argv[])
 
 		//first friday
 
-
+		if(toMonth<2) toYear--;
+		
 		long long int answer=0;
-		long long int cy = fromYear;
+		long long int cy = (fromMonth<=2)?(fromYear):(fromYear+1);;
 		int cm = fromMonth; 
 
+		int offset = (toYear - cy)/28;
+		answer += (offset)*7;
 
-		int fod =getOddDay(cm,cy);
+		cy += offset*28;
+
+
+		int fod =getOddDay(2,cy);
 		// cout<<" \t ----fod "<<fod<<endl;
 
 		while (cy<=toYear){
 
-			// cout<<"current \t"<<cm<<'\t'<<cy<<endl;
 	
 			int ffd;
-			if(fod==5) ffd=fod;
+			if(fod==5) ffd=1;
 			else if(fod==6) ffd=7;
 			else ffd = 1 + (5 - fod);
 
-			int lsd = (fod + months[cm-1])%7; //1st odd day of next month
+			int next=(isLeap(cy))?(29):(28);
+			int lsd = (fod + next)%7; //1st odd day of next month
 			
 			//last day of the current month
 			if(lsd==0) lsd = 6; 
 			else lsd--;
 			
 			//last sunday of cm
-			lsd = months[cm-1] - lsd ; 
-
+			lsd = next-lsd ; 
 			lsd -=7;
 			// int lsd = (fod + 21)%7;
 			// lsd = 22-lsd;
 
+		// while (cy<=toYear){
+			// cout<<"current \t"<<cy<<endl;
+
+			cout<<cy<<"\t fod"<<fod<<endl;
 
 			if(ffd<=lsd && lsd<=ffd+10){
 				answer++;
-				// cout<<"-------_______CLASHING_________---------"<<endl;
+				// cout<<"-------_______CLASHING_________---------"<<"\t year "<<cy<<endl;
+				cout<<" |-- fod  "<<fod<<"\t ffd  "<<ffd<<'\t'<<"lsd  "<<lsd<<endl<<endl; 
 			}
 
-			// cout<<" |-- fod  "<<fod<<"\t ffd  "<<ffd<<'\t'<<"lsd  "<<lsd<<endl; 
 			if(ffd<0 || lsd<0 || fod<0) break;
 
-			//for next month
-			fod += (months[cm-1])%7;
 
-			if(cm==2 && isLeap(cy)) fod = (fod+1)%7;
-
-			fod=fod%7;
-
-			cm++;
-			if(cm>toMonth && cy>=toYear) break;
-
-			if(cm>12){
-				cm=1;
-				cy++;
+            if(isLeap(cy)){
+				// ffd = (ffd+2)%7;
+				// lsd = (lsd+2)%7;
+			 	fod=(fod+2)%7;
+			}else{
+				// ffd = (ffd+1)%7;
+				// lsd = (lsd+1)%7;
+			 	fod=(fod+1)%7;
 			}
+
+			cy++;
+			// //for next month
+			// fod += (months[cm-1])%7;
+
+			// if(cm==2 && isLeap(cy)) fod = (fod+1)%7;
+
+			// fod=fod%7;
+
+			// cm++;
+			// if(cm>toMonth && cy>=toYear) break;
+
+			// if(cm>12){
+			// 	cm=1;
+			// 	cy++;
+			// }
 			
 		}
 
