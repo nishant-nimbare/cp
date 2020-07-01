@@ -31,7 +31,7 @@ int dp(int W, const vector<int> &w){
       }
 
       if( j>= w[i-1]){
-        table[i][j] = std::max( (table[i-1][j-w[i-1]] + w[i-1] ), table[i-1][j] );
+        table[i][j] = std::max( ( table[i-1][j-w[i-1]] + w[i-1] ), table[i-1][j] );
       }else{
         table[i][j] = table[i-1][j];
       }
