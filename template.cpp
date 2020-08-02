@@ -1,6 +1,15 @@
 #include <bits/stdc++.h>
 
+#define DEBUG true
+
+#ifdef DEBUG
+#define dout cout
+#else
+#define dout 0 && cout
+#endif
+
 using namespace std;
+
 
 int main(int argc, char const *argv[]){
 
