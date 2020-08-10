@@ -3,4 +3,5 @@ input.txt
 output.txt
 /tester
 *.zip
+*.class
 debug
