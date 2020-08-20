@@ -3,13 +3,13 @@
 - [x] Selection
 - [x] Merge
 - [x] Quick sort ( 3 way partition )
-- [ ] Heap
-- [ ] Counting
+- [x] Heap
+- [x] Counting
 - [ ] Radix
 
 ## Trees
 - [x] BST 
-- [ ] Heaps
+- [x] Heaps
 - [ ] Avl
 - [x] BIT / fenwick
 - [x] Trie
