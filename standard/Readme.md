@@ -21,6 +21,6 @@
 - [x] Edit Distance
 - [x] Long Increasing Subsequence
 - [x] 1/0 Knapsack
-- [ ] Matrix chain multiplication
+- [x] Matrix chain multiplication
 
 
