@@ -10,7 +10,7 @@
 ## Trees
 - [x] BST 
 - [x] Heaps
-- [ ] Avl
+- [x] Avl
 - [x] BIT / fenwick
 - [x] Trie
 - [ ] Segment tree
@@ -20,7 +20,7 @@
 - [x] kadane's
 - [x] Edit Distance
 - [x] Long Increasing Subsequence
-- [ ] 1/0 Knapsack
+- [x] 1/0 Knapsack
 - [ ] Matrix chain multiplication
 
 
