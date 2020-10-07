@@ -1,0 +1,222 @@
+Dynamic Programming Questions:
+• How to solve a Dynamic Programming Problem ?
+[Practice here: https://www.geeksforgeeks.org/solve-dynamicprogramming-problem/ ]
+• Binomial Coefficient Problem
+[Practice here:
+https://practice.geeksforgeeks.org/problems/ncr/0 ]
+• Permutation Coefficient Problem
+[Practice here: https://www.geeksforgeeks.org/permutationcoefficient/ ]
+• Coin Change Problem
+[Practice here:
+https://practice.geeksforgeeks.org/problems/coin-change/0 ]
+• Gold Mine Problem
+[Practice here:
+https://practice.geeksforgeeks.org/problems/gold-mineproblem/0 ]
+• Friends Pairing Problem
+[Practice here:
+https://practice.geeksforgeeks.org/problems/friends-pairingproblem/0 ]
+• Subset Sum Problem
+[Practice here:
+https://practice.geeksforgeeks.org/problems/subset-sumproblem/0 ]
+• Program for nth Catalan Number
+[Practice here: https://practice.geeksforgeeks.org/problems/nthcatalan-number/0 ]
+
+
+
+
+       • Maximize The Cut Segments
+[Practice here:
+https://practice.geeksforgeeks.org/problems/cutted-segments/0
+]
+• Painting the Fence problem
+[Practice here:
+https://practice.geeksforgeeks.org/problems/painting-thefence/0 ]
+• Assembly Line Scheduling Problem
+[Practice here: https://www.geeksforgeeks.org/assembly-linescheduling-dp-34/ ]
+• Find maximum length Snake sequence
+[Practice here: https://www.geeksforgeeks.org/find-maximumlength-snake-sequence/ ]
+• Print Fibonacci Series in reverse order
+[Practice here: https://www.geeksforgeeks.org/print-fibonacciseries-reverse-order/ ]
+• Longest Common Subsequence
+[Practice here:
+https://practice.geeksforgeeks.org/problems/longest-commonsubsequence/0 ]
+• Longest Repeated Subsequence
+[Practice here:
+https://practice.geeksforgeeks.org/problems/longest-repeatingsubsequence/0 ]
+
+
+
+
+
+       • Longest Increasing Subsequence
+[Practice here:
+https://practice.geeksforgeeks.org/problems/longest-increasingsubsequence/0 ]
+• Space Optimized Solution of LCS
+[See here: https://www.geeksforgeeks.org/space-optimizedsolution-lcs/ ]
+• LCS (Longest Common Subsequence) of three strings
+[Practice here: https://practice.geeksforgeeks.org/problems/lcsof-three-strings/0 ]
+• Maximum Sum Increasing Subsequence
+[Practice here:
+https://practice.geeksforgeeks.org/problems/maximum-sumincreasing-subsequence/0 ]
+• Count all subsequences having product less than K
+[Practice here: https://www.geeksforgeeks.org/countsubsequences-product-less-k/ ]
+• Longest subsequence such that difference between adjacent
+is one
+[Practice here:
+https://practice.geeksforgeeks.org/problems/longestsubsequence-such-that-difference-between-adjacents-is-one/0 ]
+• Maximum subsequence sum such that no three are
+consecutive
+[Practice here: https://www.geeksforgeeks.org/maximumsubsequence-sum-such-that-no-three-are-consecutive/ ]
+https://www.geeksforgeeks.org/maximum-subsequence-sum-such-that-no-three-are-consecutive/
+
+
+
+
+       • Maximum Length Chain of Pairs
+[Practice here:
+https://practice.geeksforgeeks.org/problems/max-lengthchain/1 ]
+• Minimum Sum Path in a Triangle
+[Practice here: https://www.geeksforgeeks.org/minimum-sumpath-triangle/ ]
+• Maximum size square sub-matrix with all 1s
+[Practice here:
+https://practice.geeksforgeeks.org/problems/largest-squareformed-in-a-matrix/0 ]
+• Maximum sum of pairs with specific difference
+[Practice here:
+https://practice.geeksforgeeks.org/problems/pairs-withspecific-difference/0 ]
+• Maximum difference of zeros and ones in binary string
+[Practice here: https://www.geeksforgeeks.org/maximumdifference-zeros-ones-binary-string-set-2-time/ ]
+• Min Cost Path Problem
+[Practice here:
+https://practice.geeksforgeeks.org/problems/path-in-matrix/0 ]
+• Minimum number of jumps to reach end
+[Practice here:
+https://practice.geeksforgeeks.org/problems/minimum-numberof-jumps/0 ]
+• Minimum cost to fill given weight in a bag
+[Practice here:
+https://practice.geeksforgeeks.org/problems/minimum-cost-tofill-given-weight-in-a-bag/0 ]
+
+       • Minimum removals from array to make max – min <= K
+[Practice here: https://www.geeksforgeeks.org/minimumremovals-array-make-max-min-k/ ]
+• Edit Distance
+[Practice here:
+https://practice.geeksforgeeks.org/problems/edit-distance/0 ]
+• Minimum time to write characters using insert, delete and
+copy operation
+[Practice here:
+https://practice.geeksforgeeks.org/problems/minimum-time/0 ]
+• Longest Common Substring
+[Practice here:
+https://practice.geeksforgeeks.org/problems/longest-commonsubstring/0 ]
+• Count number of ways to reach a given score in a game
+[Practice here:
+https://practice.geeksforgeeks.org/problems/reach-a-givenscore/0 ]
+• Count number of ways to cover a distance
+[Practice here:
+https://practice.geeksforgeeks.org/problems/count-number-ofhops/0 ]
+• Count Balanced Binary Trees of Height h
+[Practice here: https://practice.geeksforgeeks.org/problems/bbtcounter/0 ]
+• Count ways to divide circle using N non-intersecting chords
+[Practice here: https://www.geeksforgeeks.org/count-waysdivide-circle-using-n-non-intersecting-chords/ ]
+
+       • Largest Sum Contiguous Subarray
+[Practice here:
+https://practice.geeksforgeeks.org/problems/kadanesalgorithm/0 ]
+• Smallest sum contiguous subarray
+[Practice here: https://www.geeksforgeeks.org/smallest-sumcontiguous-subarray/ ]
+• Unbounded Knapsack (Repetition of items allowed)
+[Practice
+here:https://practice.geeksforgeeks.org/problems/knapsackwith-duplicate-items/0 ]
+• Egg Dropping Puzzle
+[Practice here: https://practice.geeksforgeeks.org/problems/eggdropping-puzzle/0 ]
+• Word Break Problem
+[Practice here:
+https://practice.geeksforgeeks.org/problems/word-break/0 ]
+• Vertex Cover Problem
+[Practice here: https://www.geeksforgeeks.org/vertex-coverproblem-set-2-dynamic-programming-solution-tree/ ]
+• Tile Stacking Problem
+[Practice here: https://www.geeksforgeeks.org/tile-stackingproblem/ ]
+• Largest Independent Set Problem
+[Practice here: https://www.geeksforgeeks.org/largestindependent-set-problem-dp-26/ ]
+
+       • Partition problem
+[Practice here: https://www.geeksforgeeks.org/partitionproblem-dp-18/ ]
+• Travelling Salesman Problem
+[Practice here: https://www.geeksforgeeks.org/travellingsalesman-problem-set-1/ ]
+• Longest Palindromic Subsequence
+[Practice here: https://www.geeksforgeeks.org/longestpalindromic-subsequence-dp-12/ ]
+• Count All Palindromic Subsequence in a given String
+[Practice here:
+https://practice.geeksforgeeks.org/problems/count-palindromicsubsequences/1 ]
+• Longest Palindromic Substring
+[Practice here:
+https://practice.geeksforgeeks.org/problems/longestpalindrome-in-a-string/0 ]
+• Longest alternating subsequence
+[Practice here:
+https://practice.geeksforgeeks.org/problems/longestalternating-subsequence/0 ]
+• Weighted Job Scheduling
+[Practice here: https://www.geeksforgeeks.org/weighted-jobscheduling/ ]
+• Coin game winner where every player has three choices
+[Practice here: https://www.geeksforgeeks.org/coin-gamewinner-every-player-three-choices/ ]
+
+       • Count Derangements (Permutation such that no element
+appears in its original position)
+[Practice here:
+https://practice.geeksforgeeks.org/problems/dearrangement-ofballs/0 ]
+• Maximum subarray sum in O(n) using prefix sum
+[Practice here: https://www.geeksforgeeks.org/maximumsubarray-sum-using-prefix-sum/ ]
+• Maximum profit by buying and selling a share at most twice
+[Practice here: https://www.geeksforgeeks.org/maximum-profitby-buying-and-selling-a-share-at-most-twice/ ]
+• Find if string is K-Palindrome or not
+[Practice here: https://practice.geeksforgeeks.org/problems/kpalindrome/1 ]
+• Wildcard Pattern Matching
+[Practice here:
+https://practice.geeksforgeeks.org/problems/wildcard-patternmatching/1 ]
+• Optimal Strategy for a Game
+[Practice here:
+https://practice.geeksforgeeks.org/problems/optimal-strategyfor-a-game/0 ]
+• Optimal Binary Search Tree
+[Practice here: https://www.geeksforgeeks.org/optimal-binarysearch-tree-dp-24/ ]
+• Number of ordered pairs such that (Ai & Aj) = 0
+[Practice here: https://www.geeksforgeeks.org/number-orderedpairs-ai-aj-0/ ]
+
+       • Palindrome Partitioning Problem
+[Practice here:
+https://practice.geeksforgeeks.org/problems/palindromicpatitioning/0 ]
+• Word Wrap Problem
+[Practice here:
+https://practice.geeksforgeeks.org/problems/word-wrap/0 ]
+• Mobile Numeric Keypad Problem
+[Practice here:
+https://practice.geeksforgeeks.org/problems/mobile-numerickeypad/0 ]
+• The painter’s partition problem
+[Practice here:
+https://practice.geeksforgeeks.org/problems/allocate-minimumnumber-of-pages/0 ]
+• Boolean Parenthesization Problem
+[Practice here:
+https://practice.geeksforgeeks.org/problems/booleanparenthesization/0 ]
+• Largest rectangular sub-matrix whose sum is 0
+[Practice here: https://www.geeksforgeeks.org/largestrectangular-sub-matrix-whose-sum-0/ ]
+• Largest area rectangular sub-matrix with equal number of
+1’s and 0’s
+[Practice here: https://www.geeksforgeeks.org/largest-arearectangular-sub-matrix-equal-number-1s-0s/ ]
+
+       • Maximum sum rectangle in a 2D matrix
+[Practice here:
+https://practice.geeksforgeeks.org/problems/maximum-sumrectangle/0 ]
+• Maximum weight transformation of a given string
+[Practice here: https://www.geeksforgeeks.org/maximumweight-transformation-of-a-given-string/ ]
+• Maximum profit by buying and selling a share at most k
+times
+[Practice here:
+https://practice.geeksforgeeks.org/problems/maximum-profit/0
+]
+• Probability of Knight to remain in the chessboard
+[Practice here:
+https://practice.geeksforgeeks.org/problems/probability-ofknight/0 ]
+• Find if a string is interleaved of two other strings
+[Practice here:
+https://practice.geeksforgeeks.org/problems/interleavedstrings/1 ]
+• Maximum Product Cutting
+[Practice here: https://www.geeksforgeeks.org/maximumproduct-cutting-dp-36/ ]
+
+       

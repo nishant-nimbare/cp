@@ -10,28 +10,23 @@
 
 using namespace std;
 
-
-int main(int argc, char const *argv[]){
-
-	ios_base::sync_with_stdio(false);
+int main(int argc, char const *argv[]) {
+    ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-	int t;
-	// std::fstream myfile("./input.txt", std::ios_base::in);
+    int t;
+    cin >> t;
 
-	cin>> t;
-	
-	while(t--){
-		int n;
-		cin >> n;
+    // std::fstream myfile("./input.txt", std::ios_base::in);
 
-		 for (int i = 0; i < n; i++) {
+    while (t--) {
+        int n;
+        cin >> n;
 
-			int a;
-			
+        for (int i = 0; i < n; i++) {
+            int a;
+        }
+    }
 
-		} 
-	}
-
-	return 0;
+    return 0;
 }
