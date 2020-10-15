@@ -22,5 +22,8 @@
 - [x] Long Increasing Subsequence
 - [x] 1/0 Knapsack
 - [x] Matrix chain multiplication
+- [x] Subset Sum
+- [x] Painters Partition
+
 
 
