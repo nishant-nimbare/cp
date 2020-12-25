@@ -5,7 +5,11 @@
 - [x] Quick sort ( 3 way partition )
 - [x] Heap
 - [x] Counting
-- [ ] Radix
+- [x] Bucket
+- [x] Radix
+
+![complexcities](./time_space-complexities_sort.png)
+
 
 ## Trees
 - [x] BST 

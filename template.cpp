@@ -8,7 +8,16 @@
 #define dout 0 && cout
 #endif
 
+#define PS <<" - "<<
+#define PG <<"  "<<
+#define PE <<endl
+
 using namespace std;
+
+void printVec(vector<int> a){ for(auto x:a) cout<<x<<" "; cout<<endl;}
+
+// printBT for printing tree horizontally
+
 
 int main(int argc, char const *argv[]) {
     ios_base::sync_with_stdio(false);

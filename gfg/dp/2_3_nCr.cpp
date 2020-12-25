@@ -25,7 +25,7 @@ int ncr(int n, int r) {
     return dpC[n][r];
 }
 
-// nPr = k*(n-1Pr-1) + n-1Pr
+// nPr = r*(n-1Pr-1) + n-1Pr
 int npr(int n, int r) {
     dout << " - - " << n << " " << r << endl;
 

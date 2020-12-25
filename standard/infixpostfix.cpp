@@ -24,6 +24,9 @@ using namespace std;
 7. Print the output
 8. Pop and output from the stack until it is not empty.
 
+
+
+STACK is Monotonically Increasing
 ***/
 
 

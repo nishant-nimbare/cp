@@ -21,7 +21,7 @@ int main(){
     for(int j=0; j<=itemSize; j++) dp[0][j] = 0;
 
 
-    // values and weights are 0 indexes
+    // values and weights are 0 indexed
     // but dp table items are 1 indexed
 
     for(int i=1; i<=itemSize; i++){
