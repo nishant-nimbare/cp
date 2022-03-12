@@ -9,9 +9,9 @@ using namespace std;
 int main(){
 
     int capacity= 10;
-    int itemSize  = 3;
-    vector<int> values = {1, 14, 8};
-    vector<int> weights = {1, 4, 8};
+    int itemSize  = 10;
+    vector<int> values = {6, 3, 8, 1, 7, 3, 8, 6, 5, 6};
+    vector<int> weights = {1, 2, 10, 6, 5, 1, 7, 4, 10, 4};
 
     int dp[capacity+1][itemSize+1];
 

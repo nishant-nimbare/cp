@@ -5,40 +5,57 @@ using namespace std;
 
 int main(int argc, char const *argv[]){
 
-	ios_base::sync_with_stdio(false);
-    cin.tie(NULL);
+  ios_base::sync_with_stdio(false);
+  cin.tie(NULL);
 
-	int n;
-	cin>> n;
-	
-    int hash[]= {0,0,0,0};
+  int n;
+  cin>> n;
+
+  vector<int> arr(n);
+
+  for(int &x:arr) cin >> x;
+
+  sort(arr.begin(), arr.end(), greater<int>());
+
+  int ans = 0;
+
+  for(int i=0, j=arr.size()-1; i<=j; i++){
 
 
-    for (int i = 0; i < n; i++) {
-        int a; cin>>a;
-        hash[a-1] += 1;
+    if(i == j){
+      //last ele
+      ans +=1;
+      continue;
     } 
 
-    int ans = 0;
-
-    ans += hash[2];
-
-    if(hash[2] <= hash[0]) hash[0] -= hash[2];
-
-    ans += hash[1]/2;
-
-    if( hash[1]%2==1){
-        ans+=1;
-        hash[0] -= min(hash[0], 2);
+    if(arr[i] == 4){ 
+      ans+=1; 
+      continue;
     }
 
-    if( hash[0] > 0){
-       ans += ((hash[0]-1) / 4)+1;
+    if(arr[i] == 3){ 
+      if(arr[j] == 1){
+        j--;
+      }
+
+      ans+=1;
+      continue;
     }
 
-    
-    ans += hash[3];
 
-    cout<<ans<<"\n";
-	return 0;
+    int rem = 4-arr[i];
+
+    while(i<j && rem>=arr[j]){
+
+      rem -= arr[j];
+      j-=1;
+    }
+    ans+=1;
+
+  } 
+
+  cout<<ans<<endl;
+
+
+  return 0;
 }

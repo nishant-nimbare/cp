@@ -37,13 +37,35 @@ int main(int argc, char const *argv[]) {
     // std::fstream myfile("./input.txt", std::ios_base::in);
 
     while (t--) {
-        int n;
-        cin >> n;
+        int n,d;
+        cin >> n>>d;
 
         vector<int> arr(n);
+        
+        bool allsmall = true, ans=false;
+        for(int &x : arr){ 
+            cin>>x;
+            if(x>d) allsmall = false;
+        }
 
-        for(int &x : arr) cin>>x;
+        if(allsmall){
+            cout<<"YES"<<endl;
+            continue;
+        }
 
+
+        for(int i=0; i<n-1; i++){
+            for(int j=i+1; j<n; j++){
+                if( arr[i] + arr[j] <= d){
+                    ans = true;
+                    break;
+                }
+            }
+            if(ans) break;
+        }
+
+        if(ans) cout<<"YES"<<endl;
+        else cout<<"NO"<<endl;
     }
 
     return 0;

@@ -25,26 +25,36 @@ void printVec(string name,vector<int> a){ dout<<name<<" : "; for(auto x:a) dout<
 
 // printBT for printing tree horizontally
 
+int inf = 100000000;
 
 int main(int argc, char const *argv[]) {
     ios_base::sync_with_stdio(false);
     cin.tie(NULL);
 
-    int t;
-    cin >> t;
+    int n;
+    cin>>n;
 
-    //cout<< std::fixed << std::setprecision(3)<<ans;
-    // std::fstream myfile("./input.txt", std::ios_base::in);
+    vi dp(n+1);
 
-    while (t--) {
-        int n;
-        cin >> n;
+    dp[0]=0;
 
-        vector<int> arr(n);
+    for(int i=1;i<=n; i++){
 
-        for(int &x : arr) cin>>x;
+        if(i<10) dp[i] = 1;
+        else{
 
+            int k=i, best=inf;
+            while(k>0){
+                int d=k%10;
+                if(d>0) best = min(best, dp[i-d]+1);
+                k=k/10;
+            }
+            dp[i] = best;
+        }
     }
+    cout<<dp[n];
+
+    // printVec("dp",dp);
 
     return 0;
 }
