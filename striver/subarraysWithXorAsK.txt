@@ -1,0 +1,45 @@
+Given an array of integers ‘ARR’ and an integer ‘X’, you are supposed to find the number of subarrays of 'ARR' which have bitwise XOR of the elements equal to 'X'.
+
+sol :-
+
+this is similar to :- number of subarrays with sum k.
+there we find prefix sums & and push prefix_sum in the map
+then later check prefix_sum - k exists in map or not
+
+because prefix_sum = y + k
+=> y = prefix_sum - k
+
+
+similarly for xor as k 
+
+prefix_xor = y ^ k
+y = prefix_xor ^ k   
+
+
+code : - 
+
+import java.util.ArrayList;
+
+public class Solution {
+	public static int subarraysXor(ArrayList<Integer> arr, int k) {
+		HashMap<Integer, Integer> m = new HashMap<>();
+        int prefix_xor = 0;
+
+        int answer = 0;
+
+        for(int c : arr) {
+            prefix_xor = prefix_xor ^ c;
+
+            if(prefix_xor == k) {
+                answer += 1;
+            }
+
+            int y = prefix_xor ^ k;
+            answer += m.getOrDefault(y, 0);
+
+            m.put(prefix_xor, m.getOrDefault(prefix_xor, 0) + 1);
+        }
+
+        return answer;
+	}
+}

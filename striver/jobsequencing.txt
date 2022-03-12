@@ -1,0 +1,41 @@
+You are given a N x 2 2-D array 'Jobs' of 'N' jobs where Jobs[i][0] denote the deadline of i-th job and Jobs[i][1] denotes the profit associated with i-th job.
+You will make a certain profit if you complete the job within the deadline associated with it. Each job takes 1 unit of time to be completed, and you can schedule only one job at a particular time.
+Your task is to find out the maximum profit that you can make.
+1 <= jobs[i][0] <= 3000
+1 <= jobs[i][1] <= 10^5
+
+
+code :- 
+import java.util.*;
+
+public class Solution
+{
+    public static int jobScheduling(int[][] jobs)
+    {
+                //sort in decending order of profit
+        Arrays.sort(jobs, (a, b) -> {
+            	if(a[1] == b[1]) return a[0]-b[0];
+              return b[1]-a[1];
+            });
+
+        boolean[] order =  new boolean[3001];
+
+        int total = 0;
+        for(int[] c : jobs) {
+            int d = c[0];
+            int p = c[1];
+
+            for(int i=d; i>0; i--) { 
+                if(!order[i]){
+                    //not set 
+                    order[i] = true;
+                    total += p;
+                    break;
+                }
+            }
+        }
+
+        return total;
+    }
+}
+
